@@ -1,0 +1,24 @@
+{
+  "name": "brown_rabbit",
+  "version": "1.0.0",
+  "description": "Web project test for HTML24",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anupdesigner/brown_rabbit.git"
+  },
+  "author": "Anup Subedi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anupdesigner/brown_rabbit/issues"
+  },
+  "homepage": "https://github.com/anupdesigner/brown_rabbit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
