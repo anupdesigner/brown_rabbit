@@ -27,6 +27,7 @@ body{
    
     width: 960px;
     margin: 0 auto;
+    box-shadow: -5px 5px 100px #fff;
 }
 
 header{
@@ -37,7 +38,7 @@ background: -moz-linear-gradient(left, #111213 0%, #111213 49%, #28292a 100%); /
 background: -webkit-linear-gradient(left, #111213 0%,#111213 49%,#28292a 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, #111213 0%,#111213 49%,#28292a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111213', endColorstr='#28292a',GradientType=1 );
-
+    
 }
 
 .logo{
@@ -58,12 +59,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111213', end
 }
 
 input{
-    
     border-radius: 12px;
     padding-left: 30px;
     width: 125px;
-    height: 18px;
+    height: 12px;
     box-shadow: 1px 1px 10px #aaa9a9 inset;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    line-height: 12px;
+    font-size: 10px;
+    color: grey;
     
 }
 
@@ -155,7 +160,7 @@ nav ul li:last-child a{
 /*Start of Section*/
 
 section{
-    
+   background: white; 
 }
 
 .left_section{
@@ -214,11 +219,11 @@ article button a{
     font-family: "HelveticaNeue";
     font-weight: lighter;
     font-size: 11px;
-    padding: 5px 45px;
+    padding: 6px 46px;
 }
 
 hr{
-    margin: 33px 0 34px 0;
+    margin: 32px 0 33px 0;
    background: #f9f7f7; /* Old browsers */
 background: -moz-linear-gradient(left, #f9f7f7 0%, #d9d6d6 50%, #f7f4f4 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, #f9f7f7 0%,#d9d6d6 50%,#f7f4f4 100%); /* Chrome10-25,Safari5.1-6 */
@@ -262,7 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
 }
 
 .page_nav li{
-    margin: 4px 2px 0px 2px;
+    margin: 6px 2px 0px 2px;
 }
 
 /*------------End of left Section--------------*/
@@ -275,7 +280,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
     background: linear-gradient(to bottom, #e7e7e7 0%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#fefefe',GradientType=0 );
     float: right;
-    padding: 30px 34px 20px 20px;
+    padding: 30px 34px 14px 20px;
 }
 
 .right_section ul li{
@@ -285,12 +290,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
 .right_section h2{
     margin-bottom: 21px;
     font-size: 25px;
+    color: #303030;
 }
 
 .right_section p, .right_section a, .right_section li{
     font-size: 13px;
     line-height: 20px;
     font-family: "Georgia";
+    color: #303030;
     
 }
 
@@ -308,7 +315,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
 
 .topic_3{
     margin-top: -5px;
-    padding-bottom:78px;
+    padding-bottom:84px;
 }
 
 .topic_3 h5{
@@ -336,7 +343,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
 .sponsers ul li{
     width: 128px;
     height: 76px;
-    border: 4px solid #e9e9e9;
+    border-right: 4px solid #e9e9e9;
+    border-left: 4px solid #e9e9e9;
+    border-top: 3px solid #e9e9e9;
+    border-bottom: 3px solid #e9e9e9;
     outline: 1px solid #f3f3f3;
     box-shadow: 0 0 0 2px #e2e2e2;
     -webkit-box-shadow:0 0 0 2px #e2e2e2;
