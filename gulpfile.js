@@ -1,15 +1,23 @@
 var gulp = require('gulp');
 var server = require('gulp-webserver');
+var sass = require('gulp-sass');
 
-gulp.task('anup', function() {
-    console.log("Hello Anup")
+gulp.task('serve', function() {
+    return gulp.src("./src/index.html").pipe(gulp.dest("./dist/"))
+});
+
+gulp.task('sass', function() {
+    return gulp.src("./src/sass/main.scss").pipe(sass()).pipe(gulp.dest("./dist/"))
 });
 
 gulp.task('default', function() {
-  gulp.src("./src/")
+    gulp.watch(["./src/index.html"],["serve"]);
+    gulp.watch(["./src/sass/main.scss"],["sass"])
+    
+    gulp.src("./dist/")
         .pipe(server({
             port: 9002,
-            livereload: false,
+            livereload: true,
             directoryListing: false,
             open: true
         }));
