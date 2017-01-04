@@ -464,3 +464,40 @@ footer{
         }
     }
 }
+
+#slideshow { 
+    
+    position: relative; 
+    width: 960px; 
+    height: 360px;
+    
+    figcaption{
+        position: absolute; 
+        top: 320px; 
+        left: 0px; 
+        right: 0px;
+        height: 40px;
+        width: 100%;
+        opacity: 0.4;
+        background: black;
+        
+        p{
+            color: white;
+            font-family: "Georgia";
+            font-size: 14px;
+            float: right;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+    }
+     
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom:0px; 
+}
+

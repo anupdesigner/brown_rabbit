@@ -8,6 +8,19 @@
         <title>NBC 2011</title>
         <meta name="description" content="login">
         <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+        $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+        </script>
     </head>
     
     <body>
@@ -50,11 +63,38 @@
                 </nav>
                 <div class="clr"></div>
             </header>
-            <div class="banner">
-                <div class="bnr_img">
-                    <img src="img/banner_img1.jpg" alt="Banner Image"/>
+            <div class="banner"> 
+                <div id="slideshow">
+                    <div class="bnr_img">
+                        <img src="img/banner_img1.jpg" alt="Banner Image"/>
+                        <figcaption><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></figcaption>
+                    </div>
+                    
+                    <div class="bnr_img">
+                        <img src="img/banner_img2.jpg" alt="Banner Image"/>
+                        <figcaption><p>An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia?</p></figcaption>
+                    </div>
+                    
+                    <div class="bnr_img">
+                        <img src="img/banner_img3.jpg" alt="Banner Image"/>
+                        <figcaption><p> Nihilo beatiorem esse Metellum quam Regulum</p></figcaption>
+                    </div>
+                        
+                    <div class="bnr_img">
+                        <img src="img/banner_img4.jpg" alt="Banner Image"/>
+                        <figcaption>
+                            <p>World Barista Champion Gwilym Davies joined the event in Iceland 2009</p>
+                        </figcaption>
+
+                    </div>
+                    
+                    <div class="bnr_img">
+                        <img src="img/banner_img5.jpg" alt="Banner Image"/>
+                        <figcaption><p>Mihi enim satis est, ipsis non satis.</p></figcaption>
+                    </div>
                     
                 </div>
+                
                 <div class="bnr_title">
                     <p>“To create an environment in which knowledge about coffee and its sphere can be obtained”</p>
                     <ul class="social_media">
@@ -66,7 +106,7 @@
                     </ul>
                     <div class="clr"></div>
                 </div>
-                
+            
             </div>
             <section>
                 <div class="left_section">
