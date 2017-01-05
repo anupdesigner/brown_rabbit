@@ -226,14 +226,12 @@ article button{
     background: linear-gradient(to bottom, #5aa6cd 0%,#45809e 100%); /* W3C, IE10+,         FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa6cd',             endColorstr='#45809e',GradientType=0 );
     border: none;
-    box-shadow: 0px 1px 0px #232323;
+    box-shadow: 0px 2px 0px #232323;
     border-radius: 2px;
     
     a{
         color: #e2e1e1;
-        font-family: "HelveticaNeue";
-        font-weight: lighter;
-        font-size: 11px;
+        font:lighter 11px "HelveticaNeue";
         padding: 6px 46px;    
     }
 }
@@ -313,9 +311,7 @@ hr{
     }
     
     p, a, li{
-        font-size: 13px;
-        line-height: 20px;
-        font-family: "Georgia";
+        font: 13px/20px "Georgia" ;
         color: #303030;
     }
     
@@ -397,9 +393,7 @@ footer{
     
     p, address, address a, blockquote{
         color: #6f6e6e;
-        font-size: 13px;
-        line-height: 20px;
-        font-family: "Georgia";
+        font: 13px/20px "Georgia" ;
     }
     
     blockquote{
@@ -483,8 +477,7 @@ footer{
         
         p{
             color: white;
-            font-family: "Georgia";
-            font-size: 14px;
+            font:14px "Georgia";
             float: right;
             margin-top: 15px;
             margin-right: 20px;
