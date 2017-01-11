@@ -9,37 +9,29 @@
         <meta name="description" content="login">
         <link rel="stylesheet" href="main.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script>
-        $("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
-        </script>
+        
     </head>
-    
     <body>
         <div id="wrapper">
-            <header>
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.jpg"/></a>
-                </div>
+            <header class="masthead">
+                <a class="logo" href="index.html">
+                    <h1>
+                        <span>NORDIC</span> BARISTACUP
+                        <ul>
+                            <li>be together</li>
+                            <li>act together</li>
+                            <li>learn togther</li>
+                            <div class="clr"></div>
+                        </ul>
+                    </h1>
+                </a>
                 
-                <div class="input">
-                    <input type="search" name="search" placeholder="Search...">
+                <form class="search">
+                    <input type="text" name="search" placeholder="Search...">
                     <img class="search_icon" src="img/search_icon.png" alt="Search Icon"/>
                     <img class="search_dropdrown" src="img/search_dropdown_03.jpg" alt="Search History" top="15px" left="15px"/>
-                    
-                </div>
-                
-                
-                
-                <nav>
+                </form>
+                <nav class="navbar">
                     <ul>
                         <li>
                             <a href="#">ABOUT NBC</a>
@@ -63,85 +55,71 @@ setInterval(function() {
                 </nav>
                 <div class="clr"></div>
             </header>
-            <div class="banner"> 
+            <section class="banner"> 
                 <div id="slideshow">
-                    <div class="bnr_img">
+                    <figure class="banner_img">
                         <img src="img/banner_img1.jpg" alt="Banner Image"/>
                         <figcaption><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></figcaption>
-                    </div>
-                    
-                    <div class="bnr_img">
+                    </figure>
+                    <figure class="banner_img">
                         <img src="img/banner_img2.jpg" alt="Banner Image"/>
                         <figcaption><p>An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia?</p></figcaption>
-                    </div>
-                    
-                    <div class="bnr_img">
+                    </figure>
+                    <figure class="banner_img">
                         <img src="img/banner_img3.jpg" alt="Banner Image"/>
                         <figcaption><p> Nihilo beatiorem esse Metellum quam Regulum</p></figcaption>
-                    </div>
-                        
-                    <div class="bnr_img">
+                    </figure>
+                    <figure class="banner_img">
                         <img src="img/banner_img4.jpg" alt="Banner Image"/>
                         <figcaption>
                             <p>World Barista Champion Gwilym Davies joined the event in Iceland 2009</p>
                         </figcaption>
-
-                    </div>
-                    
-                    <div class="bnr_img">
+                    </figure>
+                    <figure class="banner_img">
                         <img src="img/banner_img5.jpg" alt="Banner Image"/>
                         <figcaption><p>Mihi enim satis est, ipsis non satis.</p></figcaption>
-                    </div>
-                    
+                    </figure> 
                 </div>
-                
-                <div class="bnr_title">
-                    <p>“To create an environment in which knowledge about coffee and its sphere can be obtained”</p>
-                    <ul class="social_media">
-                        <li><a href="twitter.com"><img src="img/Twitter.jpg"/></a></li>
-                        <li><a href="facebook.com"><img src="img/Facebook.jpg"/></a></li>
-                        <li><a href="rss.com"><img src="img/rss.jpg"/></a></li>
-                        <li><a href="feedburner.com"><img src="img/FeedBurner.jpg"/></a></li>
-                        <li><a href="gmail.com"><img src="img/Gmail.jpg"/></a></li>
-                    </ul>
-                    <div class="clr"></div>
-                </div>
-            
-            </div>
-            <section>
-                <div class="left_section">
-                    <article>
+            </section>
+            <section class="intro">
+                <p>“To create an environment in which knowledge about coffee and its sphere can be obtained”</p>
+                <ul class="social_media">
+                    <li><a href="twitter.com"><img src="img/Twitter.jpg" onmouseover="this.src='img/twitter_hover.png'" onmouseout="this.src='img/Twitter.jpg';"/></a></li>
+                    <li><a href="facebook.com"><img src="img/Facebook.jpg" onmouseover="this.src='img/facebook_hover.png'" onmouseout="this.src='img/facebook.jpg';"/></a></li>
+                    <li><a href="rss.com"><img src="img/rss.jpg" onmouseover="this.src='img/rss_hover.png'" onmouseout="this.src='img/rss.jpg';"/></a></li>
+                    <li><a href="feedburner.com"><img src="img/FeedBurner.jpg" onmouseover="this.src='img/FeedBurner_hover.png'" onmouseout="this.src='img/FeedBurner.jpg';"/></a></li>
+                    <li><a href="gmail.com"><img src="img/Gmail.jpg" onmouseover="this.src='img/Gmail_hover.png'" onmouseout="this.src='img/Gmail.jpg';"/></a></li>
+                </ul>
+                <div class="clr"></div>
+            </section>
+            <main class="content">
+                <section class="primary-content">
+                    <article class="main-post">
                         <img src="img/article_img_03.jpg" alt="article_image"/>
                         <h2>Wonderful Copenhagen 2011<span>Posted: 23/1-2011</span></h2>
                         <p>The aim is to understand the science behind our sensory perceptions. And by stimulating the senses we will improve our tasting skills. Therefore the program will be a mix of aroma sessions, basic taste theory...</p>
-                        <button>
-                            <a href="">Read More</a>
-                        </button>
+                        <a class="main-post-btn" href="">Read More</a>
                     </article>
                     <div class="clr"></div>
                     <hr>
-                    <article>
+                    <article class="main-post">
                         <img src="img/article_img_06.jpg" alt="article_image"/>
                         <h2>Nordic Barista Cup 2011 in Copenhagen<span>Posted: 22/1-2011</span></h2>
                         <p>Nordic Barista Cup 2011 will be held in Copenhagen, Denmark.<br>
     Dates: 25th - 27th August 2011. The theme for the 2011 seminar is: SENSORY. More information will follow on this page....</p>
-                        <button>
-                            <a href="">Read More</a>
-                        </button>
+                       <a class="main-post-btn" href="">Read More</a>
                     </article>
                     <div class="clr"></div>
                     <hr>
-                    <article>
+                    <article class="main-post">
                         <img src="img/article_img_08.jpg" alt="article_image"/>
                         <h2>2010 Winners: Sweden<span>Posted: 12/1-2011</span></h2>
                         <p>Oh my goodness, the final night is here! We are at the most incredible location in all of Oslo—well, at least that is what I think, since I havent seen much of anything else around here. ...</p>
-                        <button>
-                            <a href="">Read More</a>
-                        </button>
+                        <a href="main-post-btn">Read More</a>
+                        <div class="clr"></div>
                     </article>
                     <hr>
-                    
-                    <ul class="page_nav">
+                    <ul class="pagination">
                         <li><p>Page 1 of 3</p></li>
                         <li><a href="index.html">1</a></li>
                         <li><a href="">2</a></li>
@@ -150,20 +128,19 @@ setInterval(function() {
                         <div class="clr"></div>
                     </ul>
                 <div class="clr"></div>
-                </div>
-                
-                <div class="right_section">
-                    <div class="topic_1">
+                </section>
+                <aside class="secondary-content">
+                    <article class="post1">
                         <h2>NBC Shop</h2>
                         <p>Your shopping cart is empty</p>
                         <a href="">Visit the shop</a>
-                    </div>
-                    <div class="topic_2">
+                    </article>
+                    <article class="post2">
                         <h2>Next Event</h2>
                         <p>NORDIC BARISTA CUP 2011</br>Copenhagen, Denmark</br>Dates : 25th - 27th August 2011</br>Theme : SENSORY</p>
                         <a href="">Sign up now.</a>
-                    </div>
-                    <div class="topic_3">
+                    </article>
+                    <article class="post3">
                         <h2>Scoreboard</h2>
                         <h5>List of winners from past years</h5>
                         <ul>
@@ -175,14 +152,12 @@ setInterval(function() {
                             <li>2005 &#45; Norway</li>
                             <li>2004 &#45; Denmark</li>
                         </ul>
-                        
-                    </div>
-        
-                </div>
+                    </article>
+                </aside>
             <div class="clr"></div>
-            </section>
+            </main>
             <div class="clr"></div>
-            <div class="sponsers">
+            <section class="thumbnail-list">
                 <h2>Nordic Barista Cup Sponsers</h2>
                 <ul>
                     <li><img src="img/Dalla.jpg" alt="Dalla"/></li>
@@ -212,7 +187,7 @@ setInterval(function() {
                 <div class="clr"></div>    
                 </ul>
                 
-            </div>
+            </section>
             <footer>
                 <div class="left_part">
                     <h2>About Nordic Barista Cup</h2>
@@ -246,17 +221,26 @@ The organization behind the Nordic Barista Cup see it as its main purpose to be 
                     <span>Email:</span><a href="mailto:bbrend@nordicbaristacup.com">bbrend@nordicbaristacup.com</a></p>
                     </address>
                     <ul class="social_media">
-                        <li><a href="twitter.com"><img src="img/Twitter.jpg"/></a></li>
-                        <li><a href="facebook.com"><img src="img/Facebook.jpg"/></a></li>
-                        <li><a href="rss.com"><img src="img/rss.jpg"/></a></li>
-                        <li><a href="feedburner.com"><img src="img/FeedBurner.jpg"/></a></li>
-                        <li><a href="gmail.com"><img src="img/Gmail.jpg"/></a></li>
-                    </ul>
-                    
+                    <li><a href="twitter.com"><img src="img/Twitter.jpg" onmouseover="this.src='img/twitter_hover.png'" onmouseout="this.src='img/Twitter.jpg';"/></a></li>
+                    <li><a href="facebook.com"><img src="img/Facebook.jpg" onmouseover="this.src='img/facebook_hover.png'" onmouseout="this.src='img/facebook.jpg';"/></a></li>
+                    <li><a href="rss.com"><img src="img/rss.jpg" onmouseover="this.src='img/rss_hover.png'" onmouseout="this.src='img/rss.jpg';"/></a></li>
+                    <li><a href="feedburner.com"><img src="img/FeedBurner.jpg" onmouseover="this.src='img/FeedBurner_hover.png'" onmouseout="this.src='img/FeedBurner.jpg';"/></a></li>
+                    <li><a href="gmail.com"><img src="img/Gmail.jpg" onmouseover="this.src='img/Gmail_hover.png'" onmouseout="this.src='img/Gmail.jpg';"/></a></li>
+                </ul>
                 </div>
             <div class="clr"></div>
             </footer>
         </div>
+        <script>
+        $("#slideshow > .banner_img:gt(0)").hide();
+setInterval(function() { 
+  $('#slideshow > .banner_img:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+        </script>
     </body>
-    
     </html>

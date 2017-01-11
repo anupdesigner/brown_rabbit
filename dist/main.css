@@ -1,4 +1,4 @@
-html, body, div, span, h2, h3, h4, h5, h6, p, blockquote, a, address, img, ul, li, footer, header, nav, section, input, button {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, img, ul, li, footer, header, nav, section, input, figure, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,6 +14,9 @@ a {
   text-decoration: none;
   display: block; }
 
+a:hover {
+  text-shadow: 0px 0px 9px #5aa6cd; }
+
 body {
   background-color: #012f5a;
   font-family: "Garamond"; }
@@ -23,7 +26,7 @@ body {
   margin: 0 auto;
   box-shadow: -5px 5px 100px #fff; }
 
-header {
+.masthead {
   padding: 18px 21px 25px 33px;
   background: #111213;
   /* Old browsers */
@@ -37,41 +40,59 @@ header {
 
 .logo {
   float: left;
-  padding-top: 14px; }
+  padding-top: 6px; }
   .logo a img {
     display: block; }
+  .logo:hover {
+    text-shadow: none; }
+  .logo h1 {
+    color: #636363;
+    font-size: 39.5px;
+    font-weight: lighter;
+    word-spacing: -8px; }
+    .logo h1 span {
+      color: #fff; }
+  .logo ul {
+    margin-left: 3px; }
+    .logo ul li {
+      color: #bebebe;
+      word-spacing: 0px;
+      font-size: 18px;
+      letter-spacing: 3px;
+      margin-right: 12px;
+      margin-top: -4px; }
 
-.input {
+.search {
   float: right;
   background: url("img/search_icon.png") 0 100px no-repeat;
   position: relative; }
-  .input img {
+  .search img {
     position: absolute; }
 
 input {
   border-radius: 12px;
-  padding-left: 30px;
-  width: 125px;
-  height: 12px;
+  padding: 3px 10px 3px 30px;
+  width: 83px;
   box-shadow: 1px 1px 10px #aaa9a9 inset;
-  padding-top: 10px;
-  padding-bottom: 8px;
   line-height: 12px;
   font-size: 10px;
   color: grey; }
 
+.search input[type="text"]:focus {
+  outline: none; }
+
 input::-webkit-input-placeholder {
-  font-size: 10px; }
+  font-size: 12px; }
 
 input:-moz-input-placeholder {
-  font-size: 10px; }
+  font-size: 12px; }
 
 input:ms-input-placeholder {
-  font-size: 10px; }
+  font-size: 12px; }
 
 .search_icon {
   left: 5px;
-  top: 4px; }
+  top: 5px; }
 
 .search_dropdrown {
   left: 15px;
@@ -80,27 +101,27 @@ input:ms-input-placeholder {
 .clr {
   clear: both; }
 
-nav {
+.navbar {
   float: right;
-  margin-top: 32px; }
-  nav ul {
+  margin-top: 33px; }
+  .navbar ul {
     overflow: hidden; }
-    nav ul li a {
+    .navbar ul li a {
       font-size: 12px;
       padding-right: 14px;
       color: white;
       font-weight: 600; }
-    nav ul li:last-child a {
+    .navbar ul li:last-child a {
       padding-right: 0px; }
 
 /*Start of banner*/
-.bnr_img > img {
+.banner_img > img {
   display: block; }
 
-.bnr_title {
+.intro {
   background: #111213;
   padding: 34px 20px 43px 30px; }
-  .bnr_title p {
+  .intro p {
     font-size: 30px;
     color: #a3a3a3;
     width: 595px;
@@ -119,16 +140,16 @@ nav {
 
 /*End of Banner*/
 /*Start of Section*/
-section {
+.content {
   background: white; }
 
-.left_section {
+.primary-content {
   padding: 30px 60px 7px 30px;
   background: white;
   width: 623px;
   float: left; }
 
-article img {
+.main-post img {
   float: left;
   border: 4px solid #e9e9e9;
   outline: 1px solid #f3f3f3;
@@ -136,39 +157,51 @@ article img {
   -webkit-box-shadow: 0 0 0 2px #e2e2e2;
   margin-right: 32px; }
 
-article h2 {
+.main-post h2 {
   font-size: 25px;
   color: #303030; }
-  article h2 span {
+  .main-post h2 span {
     font-size: 10px;
     color: #2c83b0;
     display: block;
     margin-bottom: 10px; }
 
-article p {
+.main-post p {
   font-family: "Georgia";
   font-size: 13px;
   color: #303030;
   line-height: 20px;
   margin-bottom: 17px; }
 
-article button {
+.main-post a {
+  display: block;
+  float: left;
+  border: none;
+  box-shadow: 0px 1px 0px #232323;
+  border-radius: 2px;
+  color: #e2e1e1;
+  font: lighter 11px "Helvetica";
+  padding: 6px 46px;
+  text-shadow: 1px -1px #444;
   background: #5aa6cd;
   /* Old browsers */
   background: -moz-linear-gradient(top, #5aa6cd 0%, #45809e 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #5aa6cd 0%, #45809e 100%);
-  /* Chrome10-         25,Safari5.1-6 */
+  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #5aa6cd 0%, #45809e 100%);
-  /* W3C, IE10+,         FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa6cd',             endColorstr='#45809e',GradientType=0 );
-  border: none;
-  box-shadow: 0px 2px 0px #232323;
-  border-radius: 2px; }
-  article button a {
-    color: #e2e1e1;
-    font: lighter 11px "HelveticaNeue";
-    padding: 6px 46px; }
+  /* W3C, IE10+,FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa6cd',endColorstr='#45809e',GradientType=0 ); }
+  .main-post a:hover {
+    background: #45809e;
+    /* Old browsers */
+    bacground: -moz-linear-gradient(top, #45809e 0%, #5aa6cd 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #45809e 0%, #5aa6cd 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #45809e 0%, #5aa6cd 100%);
+    /* W3C, IE10+,FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45809e',endColorstr='#5aa6cd',GradientType=0 ); }
 
 hr {
   margin: 32px 0 33px 0;
@@ -184,32 +217,32 @@ hr {
   border: none;
   height: 1px; }
 
-.page_nav {
+.pagination {
   margin-top: 4px; }
-  .page_nav li {
+  .pagination li {
     margin: 6px 2px 0px 2px; }
-    .page_nav li p, .page_nav li a {
+    .pagination li p, .pagination li a {
       background: #eeeeee;
       font-size: 11px;
       color: #a19ab6;
       padding: 5px 8px;
       color: #a19ab6; }
-    .page_nav li a {
+    .pagination li a {
       display: block;
       text-decoration: none; }
-      .page_nav li a:hover {
+      .pagination li a:hover {
         background: #c1c1c1;
         color: white; }
-      .page_nav li a img {
+      .pagination li a img {
         width: 5px;
         height: 4px; }
-    .page_nav li:active a {
+    .pagination li:active a {
       background: #c1c1c1;
       color: white; }
 
 /*------------End of left Section--------------*/
 /*------------Starting Right Section--------------*/
-.right_section {
+.secondary-content {
   background: #e7e7e7;
   /* Old browsers */
   background: -moz-linear-gradient(top, #e7e7e7 0%, #fefefe 100%);
@@ -221,39 +254,39 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#fefefe',GradientType=0 );
   float: right;
   padding: 30px 34px 14px 20px; }
-  .right_section h2 {
+  .secondary-content h2 {
     margin-bottom: 21px;
     font-size: 25px;
     color: #303030; }
-  .right_section ul li {
+  .secondary-content ul li {
     float: none; }
-  .right_section p, .right_section a, .right_section li {
+  .secondary-content p, .secondary-content a, .secondary-content li {
     font: 13px/20px "Georgia";
     color: #303030; }
-  .right_section a {
+  .secondary-content a {
     color: #2c83b0; }
 
-.topic_2 a {
+.post2 a {
   margin-top: 20px; }
 
-.topic_1, .topic_2, .topic_3 {
+.post1, .post2, .post3 {
   margin-bottom: 35px; }
 
-.topic_3 {
+.post3 {
   margin-top: -5px;
   padding-bottom: 84px; }
-  .topic_3 h5 {
+  .post3 h5 {
     margin-bottom: 21px; }
 
 /*End of Section*/
 /*Starting Sponsors*/
-.sponsers {
+.thumbnail-list {
   background: white;
   padding: 33px 20px 21px 32px; }
-  .sponsers h2 {
+  .thumbnail-list h2 {
     font-size: 25px;
     margin-bottom: 23px; }
-  .sponsers li {
+  .thumbnail-list li {
     width: 128px;
     height: 76px;
     border-right: 4px solid #e9e9e9;
@@ -350,7 +383,7 @@ footer {
       margin-top: 15px;
       margin-right: 20px; }
 
-#slideshow > div {
+#slideshow .banner_img {
   position: absolute;
   top: 0px;
   left: 0px;
